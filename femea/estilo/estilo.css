@@ -1,0 +1,164 @@
+body, html{
+	margin:  0; 
+	padding: 0;
+	font-size:18px;
+}
+body{
+	background:#ccc url(https://coolbackgrounds.io/images/backgrounds/white/white-trianglify-b79c7e1f.jpg) center top no-repeat;
+	background-size:100%;
+	background-attachment:fixed;
+}
+a, a img{
+	text-decoration:none;
+	border:none;
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+.principal{
+	width: 960px;
+	color: #444;
+	margin: 0 auto;
+	font-family:sans-serif;
+}
+.cabecalho{
+	height:100px;
+}
+.logo-cabecalho{
+	float:left;
+}
+.logo-cabecalho a{
+	font-size:50px;
+	font-style:italic;
+	text-decoration:none;
+	color:#000;
+	display:block;
+	padding:20px 0 0 0;
+}
+.pesquisa{
+	float:right;
+	margin-top:40px;
+	margin-right:10px;
+	margin-left: 15%;
+	padding:15px;
+	border-radius: 15px;
+}
+input[type=text] {
+	width: 100%;
+	-webkit-transition: width 0.15s ease-in-out;
+	transition: width 0.15s ease-in-out;
+ }
+.menu ul li, .menu ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.menu ul li{
+	display:inline-block;
+}
+.menu ul li a{
+	display:block;
+	color:black;
+	padding:13px 20px;
+}
+.corpo{
+	position:relative;
+	overflow:hidden;
+}
+.artigos{
+	float:left;
+}
+.artigos, .artigos:before{
+	width:70%;
+}
+.artigos:before{
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	
+	z-index:-1;
+	content:'';
+}
+.barra-lateral{
+	float:right;
+}
+.barra-lateral, .barra-lateral:before{
+	width:30%;
+}
+.barra-lateral:before{
+   content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+	right:0;
+    z-index: -1;
+    
+}
+.espacamento{
+	padding:20px;
+}
+.rodape{
+	padding:20px;
+	text-align:center;
+}
+
+.nav {
+	border-bottom: solid 1px #eaeaeb;
+	text-align: right;
+	height: 70px;
+	line-height: 70px;
+}
+.menu {
+	margin: 0 30px 0 0;
+}
+.menu a {
+	clear: right;
+	text-decoration: none;
+	color: rgb(82, 82, 82);
+	padding: 15px 15px 15px 15px;
+	margin: 0 10px;
+	line-height: 70px;
+}
+.menu a:hover {
+	background-color: #888;
+	color: #fff;
+}
+label {
+	margin: 0 40px 0 0;
+	font-size: 26px;
+	line-height: 70px;
+	display: none;
+	width: 26px;
+	float: right;
+}
+#toggle {
+	display: none;
+}
+
+@media only screen and (max-width: 700px) {
+	label {
+		display: block;
+		cursor: pointer;
+	}
+	.menu {
+		text-align: center;
+		width: 100%;
+		display: none;
+    position: static;
+	}
+	.menu a {
+		display: block;
+		border-bottom: solid 1px #eaeaeb;
+		margin: 0;
+		padding: 0;
+	}
+	.menu a:hover {
+		color:#fff;
+		background-color: #888;
+	}
+	#toggle:checked + .menu {
+		display: block;
+	}
+}
