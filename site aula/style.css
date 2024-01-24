@@ -1,0 +1,26 @@
+body{
+    background-color: burlywood;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius:303%;
+}
+nav {
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+    border: 1px red;
+    background-color: rgba(255, 0, 0, 0.158);
+    border-radius: 309px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+ul li {
+    margin: 20px;
+}
